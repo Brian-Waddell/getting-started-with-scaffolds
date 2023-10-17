@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/firstdraft/draft_generators.git
+  revision: 3103fe2329f6de1de04112217fa2f0f86e9b7f31
+  specs:
+    draft_generators (0.0.4)
+      devise
+      indefinite_article
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -123,9 +131,6 @@ GEM
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
-    draft_generators (0.0.4)
-      devise
-      indefinite_article
     draft_matchers (0.0.2)
       capybara
       color_namer
@@ -416,7 +421,7 @@ DEPENDENCIES
   debug
   devise
   dotenv-rails
-  draft_generators
+  draft_generators!
   draft_matchers
   faker
   grade_runner

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "draft_generators"
+gem "draft_generators", :github => "firstdraft/draft_generators"
 
 ruby "3.2.1"
 

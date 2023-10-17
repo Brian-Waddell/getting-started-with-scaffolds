@@ -1,4 +1,4 @@
-<form action="/modify_movie/<%= @the_movie.id %>"  method="post" data-turbo="false">
+<!-- <form action="/modify_movie/<%= @the_movie.id %>"  method="post" data-turbo="false"> --> 
 
 
 <div>
@@ -69,7 +69,9 @@
       Edit movie
     </h2>
 
-    <form action="/modify_movie/<%= @the_movie.id %>"  method="post" >
+    <form action="/modify_movie/<%= @the_movie.id %>"  method="post" data-turbo="false">
+
+
       <div>
         <label for="title_box">
           Title
