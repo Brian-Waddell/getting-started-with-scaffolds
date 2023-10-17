@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get("/movies/new", { :controller => "movies", :action => "new"})
 
+  get("/movies/:id/edit", { :controller => "movies", :action => "edit"})
+
   # CREATE
   post("/movies", { :controller => "movies", :action => "create" })
           

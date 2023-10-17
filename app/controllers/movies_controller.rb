@@ -5,6 +5,13 @@ class MoviesController < ApplicationController
     render(template: "movies/new")
   end
 
+  def edit 
+
+    @the_movie = Movie.where(id: params.fetch(:id)).first
+
+    render(template: "movies/edit")
+  end 
+
   def index
     matching_movies = Movie.all
 
