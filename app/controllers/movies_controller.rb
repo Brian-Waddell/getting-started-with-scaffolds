@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
 
   def new 
+  @the_movie = Movie.new 
 
     render(template: "movies/new")
   end
