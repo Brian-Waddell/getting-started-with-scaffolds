@@ -2,29 +2,29 @@ Rails.application.routes.draw do
   resources :books
   # Routes for the Movie resource:
 
-  get("/movies/new", { :controller => "movies", :action => "new"})
+  get "/movies/new" =>   "movies#new"
 
-  get("/movies/:id/edit", { :controller => "movies", :action => "edit"})
+  get "/movies/:id/edit" =>   "movies#edit"
 
   # CREATE
-  post("/movies", { :controller => "movies", :action => "create" })
+  post("/movies" =>  "movies#create" 
           
   # READ
-  get("/movies", { :controller => "movies", :action => "index" })
+  get "/movies" => "movies#index" 
   
-  get("/movies/:id", { :controller => "movies", :action => "show" })
+  get "/movies/:id" =>   "movies#show" 
   
   # UPDATE
   
-  patch("/movies/:id", { :controller => "movies", :action => "update" })
+  patch("/movies/:id" =>   "movies#update" 
   
   # DELETE
-  delete("movies/:id", { :controller => "movies", :action => "destroy" })
+  delete "movies/:id" => "movies#destroy" 
 
   #------------------------------
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
+   root "articles#index"
 end
